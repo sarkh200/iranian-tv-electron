@@ -10,7 +10,7 @@
     "publish": "electron-forge publish"
   },
   "author": "Sadra Saharkhiz",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@electron-forge/cli": "^6.4.2",
     "@electron-forge/maker-deb": "^6.4.2",
