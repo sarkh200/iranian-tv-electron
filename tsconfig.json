@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"target": "ES6",
+		"module": "NodeNext",
+		"sourceMap": true,
+		"outDir": "JS",
+		"esModuleInterop": true,
+		"moduleResolution": "NodeNext",
+	}
+}

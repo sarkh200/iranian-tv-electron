@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>Iranian TV</title>
+	<link rel="stylesheet" href="CSS/Main.css">
+	<script src="JS/jquery-3.7.1.js"></script>
+	<script src="JS/App.js"></script>
+</head>
+
+<body class="background">
+	<div class="flex-container">
+		<div class="channelSelect">
+			<button id="tv1" onclick="showIframe(this)">
+				<img src="https://static.telewebion.com/channelsLogo/ZjMzNmU2NTJlZTIyZjU4ZjliMWI2ZmI3NjBjOGRkMTFmODA0ZWUzZGI4ODE2NmFhMmQyNDBkYjFiMDY0NzUzMw/default"
+					alt="TV1" />
+			</button>
+			<button id="tv2" onclick="showIframe(this)">
+				<img src="https://static.telewebion.com/channelsLogo/MzYyMzM1NmVhYjc5MmZlY2ZmNzJlMGY3ZmJjZjc5Y2UwNDkyODQxNDU4YzU5MjE0MzFlYjg4NWM4NDZiNzA5NA/default"
+					alt="TV2" />
+			</button>
+			<button id="tv3" onclick="showIframe(this)">
+				<img src="https://static.telewebion.com/channelsLogo/MWUxYmE4YjJhZTc4OWZiOTVkMzczODdkN2NjY2I4YjNiZTFjYjRiODM3NjhiMzcxOGI5YzdjMWNlODA3YjMzYg/default"
+					alt="TV3" />
+			</button>
+			<button id="tv4" onclick="showIframe(this)">
+				<img src="https://static.telewebion.com/channelsLogo/MTc1NzNhNjAxNjlhNDA4NzRhZjYzMzNhNjk2OWY2ZWIyY2JjNTEzM2ZjOTk2ZjViNjUwMTg3YjQ1OGJkMzZmOA/default"
+					alt="TV4" />
+			</button>
+			<button id="tehran" onclick="showIframe(this)">
+				<img src="https://static.telewebion.com/channelsLogo/NzQyZGZmZmI2MTlkZmYxZTdkMzFjNmVlYzY3MzdmNTJkNzZmYTZkOGYxM2U5YjJmMjk2NGQyMDhmZWMyYjY2Yw/default"
+					alt="TV5" />
+			</button>
+			<button id="irinn" onclick="showIframe(this)">
+				<img src="https://static.telewebion.com/channelsLogo/YjZjYTVlY2I2MGU2ZjNjOTEzZGRlYTFmODE5YTc2OGQ0M2YxMTMzNGQ5NTZiMTFmZDhiYzIzZjVkNWViZjg2Zg/default"
+					alt="Irinn" />
+			</button>
+			<button id="varzesh" onclick="showIframe(this)">
+				<img src="https://static.telewebion.com/channelsLogo/592f762d-695f-42bc-912f-ecc98546d6b5/default"
+					alt="Varzesh" />
+			</button>
+			<button id="nasim" onclick="showIframe(this)">
+				<img src="https://static.telewebion.com/channelsLogo/NWMwZWI1N2NiNTgzZjVhYjViNmMxNTYzZjQ0ODczZTMwZWEyZWQyMDJlN2RjMmIwNTUzYmE4NTFiZDljYzQwOQ/default"
+					alt="Nasim" />
+			</button>
+			<button id="hdtest" onclick="showIframe(this)">
+				<img src="https://static.telewebion.com/channelsLogo/N2ZjYjI0ZWFmMDdhZTk0MTljZjg5NDI1MjVhYzFjNThiNWU4NDVlMjJlYTI4MWRkMjI1Mjc2YmJmN2FiMzVjYw/default"
+					alt="Tamasha" />
+			</button>
+			<button id="pooya" onclick="showIframe(this)">
+				<img src="https://static.telewebion.com/channelsLogo/Y2U2NGUwOTYxMjczYzIwNjQwNDEzMzI0YTY0OWRlYjQ2NTU4NjYyYzg5MjIwOWZkZTUyOGE1ZmRiNjMwZjA4ZA/default"
+					alt="Pooya" />
+			</button>
+			<button id="ifilm" onclick="showIframe(this)">
+				<img src="https://static.telewebion.com/channelsLogo/NTgyNmRjMzlhMGY4MmUwNGNjZDJiMjM4OTEwNjMxNTRmMjA5Mjc1N2FiYWY2MGEzOGVkZTg1NWM0Yzc5YzU4Mw/default"
+					alt="Ifilm" />
+			</button>
+			<button id="namayesh" onclick="showIframe(this)">
+				<img src="https://static.telewebion.com/channelsLogo/MmU0MjI1M2FjY2U3NzljZTFhYmZmNjMyODcxMjEwN2FlMDhiZjEyMGQxNTU0OTM2YTY3NTNhMGEzMzk5YzNhZg/default"
+					alt="Namayesh" />
+			</button>
+			<button id="mostanad" onclick="showIframe(this)">
+				<img src="https://static.telewebion.com/channelsLogo/NmI1OTM5YTljNWYxNjBhNTEyNDE4ZmYwY2FhODY1MzQwMWI4N2VmOTc5MmVhYTg5YmIwZDlmZDJhZmZjMTc2ZQ/default"
+					alt="Mostanad" />
+			</button>
+			<button id="quran" onclick="showIframe(this)">
+				<img src="https://static.telewebion.com/channelsLogo/ZTIxODczOWE4OWQ4MzRmOWU2M2Q3N2ZiYmI4YzNjMTNkZmM3YmQ1NmQ2MGVjMjE5ZDljZmIyZWU5N2RkZWMwMw/default"
+					alt="Quran" />
+			</button>
+			<button id="amouzesh" onclick="showIframe(this)">
+				<img src="https://static.telewebion.com/channelsLogo/80849bee-6fb3-4e82-8047-da2ead8b61bf/default"
+					alt="Amouzesh" />
+			</button>
+			<button id="salamat" onclick="showIframe(this)">
+				<img src="https://static.telewebion.com/channelsLogo/b24edd34-d2ef-4c18-9f95-7978c719ead6/default"
+					alt="Salamat" />
+			</button>
+			<button id="ofogh" onclick="showIframe(this)">
+				<img src="https://static.telewebion.com/channelsLogo/OTc3YjJkNzk0MmJjMjkxMTRmNjk2MmNhNTdiNGNkNjMxNjE2NWU1ZDI5MzlhMjI0MzZiYzljNDVkMjRkZTkxMA/default"
+					alt="Ofogh" />
+			</button>
+			<button id="omid" onclick="showIframe(this)">
+				<img src="https://static.telewebion.com/channelsLogo/NzRjZTk4ZmFjMGNlNzMzMjM2N2JjYWE1YTFmYmVkOTMzYTVmNzgzNzk1ZGZlMDJiMGM5NzU1YTM3NDkyZmY0Zg/default"
+					alt="Omid" />
+			</button>
+		</div>
+	</div>
+	<div id="websiteDiv" class="websiteDiv">
+
+	</div>
+</body>
+
+</html>
