@@ -28,5 +28,21 @@
   },
   "overrides": {
     "xml2js": "^0.5.0"
+  },
+  "config": {
+    "forge": {
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "repository": {
+              "owner": "sarkh200",
+              "name": "iranian-tv-electron"
+            },
+            "draft": true
+          }
+        }
+      ]
+    }
   }
 }
