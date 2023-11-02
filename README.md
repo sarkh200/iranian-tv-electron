@@ -1,2 +1,2 @@
-# iranian-tv-electron
+# Iranian TV Electron
 Control Telewebion with keyboard
