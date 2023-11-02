@@ -60,7 +60,10 @@
         },
         {
           "name": "@electron-forge/maker-deb",
-          "config": {}
+          "config": {
+            "author": "Sadra Saharkhiz",
+            "description": "Iranian TV"
+          }
         },
         {
           "name": "@electron-forge/maker-rpm",
