@@ -2,7 +2,7 @@ const { app, BrowserWindow } = require('electron');
 const electron = require('electron');
 const path = require('path');
 const url = require('url');
-const nut = require('@nut-tree/nut-js');
+const robot = require('robotjs');
 
 
 let win: any;
@@ -25,27 +25,28 @@ function createWindow() {
 	win.webContents.on('before-input-event', (event: any, input: any) => {
 		if (input.key == "1") {
 			(async () => {
-				await nut.mouse.setPosition(new nut.Point(electron.screen.getPrimaryDisplay().size.width / 2, electron.screen.getPrimaryDisplay().size.height / 2));
-				await nut.mouse.doubleClick(nut.Button.LEFT);
+				await robot.setPosition(new robot.Point(electron.screen.getPrimaryDisplay().size.width / 2, electron.screen.getPrimaryDisplay().size.height / 2));
+				await robot.leftClick();
+				await robot.leftClick();
 				sleep(.5);
-				await nut.mouse.leftClick();
+				await robot.leftClick();
 			})();
 		}
 		else if (input.key == "2") {
 			(async () => {
-				await nut.keyboard.pressKey(nut.Key.Escape);
+				await robot.pressKey(robot.Key.Escape);
 				sleep(.5);
-				await nut.keyboard.pressKey(nut.Key.PageUp);
-				await nut.keyboard.pressKey(nut.Key.PageUp);
-				await nut.keyboard.pressKey(nut.Key.PageUp);
-				await nut.mouse.setPosition(new nut.Point(0, electron.screen.getPrimaryDisplay().size.height / 2));
-				await nut.mouse.leftClick();
-				await nut.mouse.click(nut.Button.MIDDLE);
+				await robot.keyboard.pressKey(robot.Key.PageUp);
+				await robot.keyboard.pressKey(robot.Key.PageUp);
+				await robot.keyboard.pressKey(robot.Key.PageUp);
+				await robot.mouse.setPosition(new robot.Point(0, electron.screen.getPrimaryDisplay().size.height / 2));
+				await robot.mouse.leftClick();
+				await robot.mouse.click(robot.Button.MIDDLE);
 			})();
 		}
 		else if (input.key == "3") {
 			(async () => {
-				await nut.mouse.click(nut.Button.MIDDLE);
+				await robot.mouse.click(robot.Button.MIDDLE);
 			})();
 		}
 	});
